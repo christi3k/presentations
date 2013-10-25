@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>How to Hack HTML5 Mobile Games</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Hacking your first HTML5 Mobile Game</h1>
+    <p class="footer">
+      Christie Koehler, 
+      <a href="http://twitter.com/christi3k">@christi3k</a>,
+      <a href="mailto:ckoehler@mozilla.com">ckoehler@mozilla.com</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+    <p class="abstract">
+      <strong>Abstract: </strong>
+       Add your talk abstract here
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="intro" class="slide cover v"><div>
+    <section>
+      <header>
+        <h2>Hacking your first HTML5 Mobile Game</h2>
+      </header>
+      <img src="pictures/browserpairs/tetris.jpg" 
+           class="middle"> 
+       <small class="byline">
+           Christie Koehler, MozFest 2013
+      </small>
+      <footer class="notes">
+        This is a simple cover slide with an image in the middle
+      </footer>
+    </section>
+  </div></div>
+
+  <!-- end slide block -->
+
+  <div id="createGithub" class="slide"><div>
+    <section>
+      <header>
+        <h2>Create a Github account</h2>
+      </header>
+      <img src="pictures/browserpairs/github-home.png" 
+           class="right"
+           alt="Github Homepage"
+           width="75%">
+           You'll need a Github account a bit later.
+           Create one at <a href="http://github.com">github.com</a>.
+       <footer class="notes">
+            Later, you'll need a Github account. Go to github.com and create one while we're getting to know each other.
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="whathack" class="slide cover h"><div>
+    <section>
+      <header>
+        <h2>What do we mean when we say "HACK"?</h2>
+      </header>
+      <img src="pictures/browserpairs/soldering-iron.jpg"
+        class="middle">
+        <small class="credits">
+            <a href="http://womenwhohack.stumptownsyndicate.org/files/2011/12/5163751400_961b35fa89_b.jpg">photo source</a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="olpc-hack" class="slide"><div>
+    <section>
+      <header>
+        <h2>Hacking: Make it work for you!</h2>
+      </header>
+      <img src="pictures/browserpairs/kids-hack-olpc.png" 
+           class="right shadow"
+           alt=""
+           height="60%">
+      <ul>
+          <li>Solving a problem or meeting a need.</li>
+          <li>Starting with the knowledge you already have.</li>
+          <li>You can hack anything!</li>
+      </ul>
+      <small class="credits">
+        <a href="http://gizmodo.com/5956417/ethiopian-kids-hack-their-olpc-tablets-in-5-months-with-no-help">
+          Article: Kids Hacking Their Tablets
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="why-games" class="slide cover h"><div>
+    <section>
+      <header>
+        <h2>Why make HTML5 Mobile games & apps?</h2>
+      </header>
+      <img src="pictures/browserpairs/two_castles_xlg.jpg" 
+           class="right shadow"
+           alt=""
+           height="60%">
+      <small class="credits">
+        <a href="http://bigdoggalleries.com/artwork/ed_hastings/two_castles/two_castles_xlg.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="which-platform" class="slide"><div>
+    <section>
+      <header>
+        <h2>Platform: Which would you choose?</h2>
+      </header>
+      <img src="pictures/browserpairs/android-vs-apple_fanboy.jpg" 
+           class="middle shadow"
+           alt=""
+           height="50%">
+      <small class="credits">
+        <a href="http://www.q8blend.com/wp-content/uploads/2012/08/android-vs-apple_fanboy.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="why-choose" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2><strong>Why choose?</strong></h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>  
+
+  <div id="any-device" class="slide cover v"><div>
+    <section>
+      <header>
+        <h2>What if you could create a game that would work on any device?</h2>
+      </header>
+      <img src="pictures/browserpairs/devices.jpg" 
+           class="middle shadow"
+           alt=""
+           height="60%">
+      <small class="credits">
+        <a href="http://icant.co.uk/talks/h5/pictures/appdays/devices.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="playing" class="slide"><div>
+    <section>
+      <header>
+        <h2>HTML5 Mobile Games</h2>
+      </header>
+      <img src="pictures/browserpairs/UPS-Road-Code.jpg" 
+           class="right shadow"
+           alt=""
+           height="50%">
+        Anyone can participate or innovate using well-known, open web technologies without asking permission from others.
+      <small class="credits">
+        <a href="http://bgccm.org/wp-content/uploads/2013/01/UPS-Road-Code.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="see-code" class="slide"><div>
+    <section>
+      <header>
+        <h2>See. Remix & Rematch.</h2>
+      </header>
+      <img src="pictures/browserpairs/browserpairs-webconsole.png" 
+           class="right shadow"
+           alt=""
+           height="50%">
+You can see the code others create and understand it, remix it and make something new.
+      <small class="credits">
+        <a href="">
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="building-blocks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Building blocks</h2>
+      </header>
+      <img src="pictures/browserpairs/slide7pix.png" 
+           class="left"
+           alt=""
+           height="60%">
+           The web is made up of components that are like Lego building blocks...
+...that let you make an infinite number of things.
+      <small class="credits">
+        <a href="http://slides.netfools.com/images/HSslides1/slide7pix.png">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="remix" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/slide8pix.jpg" 
+           class="right shadow"
+           alt=""
+           height="60%">
+The world of the web encourages remixing to 
+                        make new things because that is how it is built.
+      <small class="credits">
+        <a href="http://slides.netfools.com/images/HSslides1/slide8pix.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="why-learn-code" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Why learn to code?</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>  
+
+  <div id="not-write" class="slide"><div>
+    <section>
+      <header>
+        <h2>Could you imagine being able to read but not write?</h2>
+      </header>
+      <img src="pictures/browserpairs/learn-to-read.jpg" 
+           class="right shadow"
+           alt=""
+           height="60%">
+      <small class="credits">
+        <a href="http://slides.netfools.com/images/HSslides1/slide10pix.jpg">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="write-hack" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/hack.png" 
+           class="left"
+           alt=""
+           height="60%">
+Knowing how to read and write code allows you to turn your ideas into games and apps to share with others and make a difference.
+      <small class="credits">
+        <a href="http://cl.ly/image/3d3R1P1a033b/Screen%20Shot%202013-02-08%20at%2011.13.48%20PM.png">photo source
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="lets-code" class="slide"><div>
+    <section>
+      <header>
+        <h2>Let's code!</h2>
+      </header>
+      <img src="pictures/browserpairs/browser-pairs-ui.png" 
+           class="left"
+           alt=""
+           height="50%">
+We're going to start with existing code. We'll examine it, remix it, and make our own custom card matching game.
+      <small class="credits">
+        <a href="http://cl.ly/image/453T381X1d43/Screen%20Shot%202013-02-08%20at%2011.18.13%20PM.png">
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="where-code" class="slide"><div>
+    <section>
+      <header>
+        <h2>Where does this code come from?</h2>
+      </header>
+      <a href="https://github.com/christi3k/browser-pairs">github.com/christi3k/browser-pairs</a>
+      <a href="https://github.com/christi3k/browser-pairs"><img src="pictures/browserpairs/github-network.png" 
+           class="right"
+           alt=""
+           height="60%"></a>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="fork" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/github-fork.png" 
+           class="middle"
+           alt=""
+           height="60%">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="filelist" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/github-index.png" 
+           class="middle"
+           alt=""
+           height="60%">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="editbutton" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/github-edit-button.png" 
+           class="middle"
+           alt=""
+           width="90%">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="edit" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/github-edit.png" 
+           class="middle"
+           alt=""
+           width="90%">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="backup" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/browserpairs/file-manager.png" 
+           class="middle"
+           alt=""
+           width="70%">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="ready-set-go" class="slide oneline"><div>
+    <section>
+      <header>
+        <h2>Ready, set, go!</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>  
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Thank you!</h2>
+      </header>
+      <img src="pictures/browserpairs/ck-summer-2013-192px.jpg" class="right" alt="Christie Koehler">
+      <ul class="nobull">
+        <li>Christie Koehler</li>
+        <li><a href="http://twitter.com/christi3k">@christi3k</a></li>
+        <li><a href="mailto:ckoehler@mozilla.com">ckoehler@mozilla.com</a></li>
+        <li><strong>Slides</strong>: {slideurl}</li>
+      </ul>
+      <small class="credits">
+      </small>
+
+    <footer class="notes">
+    </footer>
+
+    </section>
+  </div></div>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
